@@ -58,7 +58,7 @@ jobs:
       fail-fast: false
 
   build-for-windows-flutter:
-    if: ${{ env.WINIF == 'true' }}
+    if: false
     name: ${{ matrix.job.target }}
     needs: [build-RustDeskTempTopMostWindow, generate-bridge]
     runs-on: ${{ matrix.job.os }}
