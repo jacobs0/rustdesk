@@ -248,8 +248,7 @@ jobs:
       #      ./SignOutput/rustdesk-*.msi
       #      ./SignOutput/rustdesk-*.exe
 
-
-    build-for-macOS:
+  build-for-macOS:
     name: ${{ matrix.job.target }}
     runs-on: ${{ matrix.job.os }}
     needs: [generate-bridge]
@@ -454,7 +453,7 @@ jobs:
       #    prerelease: true
       #    tag_name: ${{ env.TAG_NAME }}
       #    files: |
-      #      rustdesk*-${{ matrix.job.arch }}.dmg
+      #      rustdesk*-${{ matrix.job.arch }}.dmg 
 
 
 
